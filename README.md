@@ -72,6 +72,13 @@ This project is a simple **Todo List application** built using **React** for the
 
 ---
 
+## Demo
+
+
+https://github.com/user-attachments/assets/43191683-54ab-4da6-9a87-e92f7d42d54f
+
+
+
 ## Contributing
 
 Contributions are welcome! If you have suggestions for improvements, feel free to open an issue or submit a pull request.
