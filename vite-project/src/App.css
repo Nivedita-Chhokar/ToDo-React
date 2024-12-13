@@ -1,42 +1,120 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* General styles */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card styles */
+.card {
+  background-color: #1e1e1e;
   padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+}
+
+.header {
+  font-size: 2rem;
+  color: #64ffda;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* New Todo Form */
+.new-todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.new-todo-form input {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.new-todo-form input:focus {
+  outline: 2px solid #64ffda;
 }
 
-.card {
-  padding: 2em;
+.new-todo-form button {
+  background-color: #64ffda;
+  color: #121212;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
+.new-todo-form button:hover {
+  background-color: #52e0c6;
+  transform: scale(1.05);
+}
+
+/* Todo items */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  background-color: #1c1c1c;
+  transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+  background-color: #2a2a2a;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-item button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-item button:hover {
+  background-color: #ff4c4c;
+}
+
+/* Links */
 .read-the-docs {
   color: #888;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.center-container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
